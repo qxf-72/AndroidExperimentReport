@@ -26,7 +26,6 @@ public class DataDownload {
             if (responseCode == HttpURLConnection.HTTP_OK) {
                 InputStreamReader inputStreamReader = new InputStreamReader(connection.getInputStream());
                 BufferedReader reader = new BufferedReader(inputStreamReader);
-
                 String line;
                 while ((line = reader.readLine()) != null) {
                     stringBuilder.append(line);
@@ -44,7 +43,7 @@ public class DataDownload {
     public ArrayList<MyLocation> parseJsonObjects(String content) {
         ArrayList<MyLocation> locations = new ArrayList<>();
 
-        try{
+        try {
             JSONObject jsonObject = new JSONObject(content);
             JSONArray shopsArray = jsonObject.getJSONArray("shops");
 

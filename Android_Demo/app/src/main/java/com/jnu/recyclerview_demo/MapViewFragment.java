@@ -35,21 +35,20 @@ public class MapViewFragment extends Fragment {
 
 
     public class DataDownloadTask extends AsyncTask<String, Void, String> {
-
         // 线程任务
         @Override
         protected String doInBackground(String... urls) {
             return new DataDownload().download(urls[0]);
         }
-
         // 任务完成后的回调函数
         @Override
         protected void onPostExecute(String content) {
             super.onPostExecute(content);
             if (content == null)
                 return;
-
+            // 解析JSON数据
             locations = new DataDownload().parseJsonObjects(content);
+            // 在地图上添加标记
             for (int i = 0; i < locations.size(); i++) {
                 LatLng position = new LatLng(locations.get(i).getLatitude(), locations.get(i).getLongitude());
                 tencentMap.addMarker(new MarkerOptions(position)
@@ -68,14 +67,14 @@ public class MapViewFragment extends Fragment {
         mapView = rootView.findViewById(R.id.mapView);
 
         tencentMap = mapView.getMap();
-        tencentMap.setMapType(TencentMap.MAP_TYPE_SATELLITE);
+        tencentMap.setMapType(TencentMap.MAP_TYPE_DARK);
 
         LatLng init_position = new LatLng(22.250093, 113.534267); //地图中心点坐标(暨南大学珠海校区)
         CameraUpdate cameraSigma =
                 CameraUpdateFactory.newCameraPosition(new CameraPosition(
                         init_position,   //坐标
-                        14,         //缩放级别
-                        45f,         //目标倾斜角
+                        12,         //缩放级别
+                        0f,         //目标倾斜角
                         0f)         //目标旋转角
                 );
         //移动地图
