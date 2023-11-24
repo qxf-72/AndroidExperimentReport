@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class BookItemDetailsActivity extends AppCompatActivity {
     private int position ;

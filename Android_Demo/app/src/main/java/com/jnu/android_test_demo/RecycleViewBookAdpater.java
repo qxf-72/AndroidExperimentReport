@@ -1,5 +1,5 @@
 //数据通过Adapter传递给UI控件
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.content.Context;
 import android.view.ContextMenu;
@@ -12,7 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.jnu.recyclerview_demo.data.BookItem;
+import com.jnu.android_test_demo.data.BookItem;
+
 
 import java.util.ArrayList;
 

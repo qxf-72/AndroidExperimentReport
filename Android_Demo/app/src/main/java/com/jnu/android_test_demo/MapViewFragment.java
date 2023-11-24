@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -6,11 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.jnu.recyclerview_demo.data.DataDownload;
-import com.jnu.recyclerview_demo.data.MyLocation;
+import com.jnu.android_test_demo.data.DataDownload;
+import com.jnu.android_test_demo.data.MyLocation;
+
 import com.tencent.tencentmap.mapsdk.maps.CameraUpdate;
 import com.tencent.tencentmap.mapsdk.maps.CameraUpdateFactory;
 import com.tencent.tencentmap.mapsdk.maps.TencentMap;

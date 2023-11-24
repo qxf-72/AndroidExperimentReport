@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.os.Bundle;
 
@@ -12,10 +12,11 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.jnu.android_test_demo.view.GameView;
 
 
 public class MainActivity extends AppCompatActivity {
-    private final String[] titles = {"图书", "地图", "新闻", "时钟"};
+    private final String[] titles = {"图书", "地图", "新闻", "时钟", "游戏"};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 适配器内部类,用于管理Fragment
     private static class FragmentAdapter extends FragmentStateAdapter {
-        private static final int NUM_TABS = 4;
+        private static final int NUM_TABS = 5;
 
         public FragmentAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
             super(fragmentManager, lifecycle);
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
                     return new WebViewFragment();
                 case 3:
                     return new ClockViewFragment();
+                case 4:
+                    return new GameViewFragment();
                 default:
                     return null;
             }

@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClockViewFragment">
+    tools:context=".GameViewFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <com.jnu.android_test_demo.view.CustomClockView
+    <com.jnu.android_test_demo.view.GameView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+    />
 
 </FrameLayout>

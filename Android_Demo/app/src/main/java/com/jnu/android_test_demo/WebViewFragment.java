@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+
 
 /**
  * A simple {@link Fragment} subclass.

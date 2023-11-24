@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo;
+package com.jnu.android_test_demo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -18,8 +18,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
-import com.jnu.recyclerview_demo.data.BookItem;
-import com.jnu.recyclerview_demo.data.DataBank;
+import com.jnu.android_test_demo.data.BookItem;
+import com.jnu.android_test_demo.data.DataBank;
+
 
 import java.util.ArrayList;
 import java.util.Objects;

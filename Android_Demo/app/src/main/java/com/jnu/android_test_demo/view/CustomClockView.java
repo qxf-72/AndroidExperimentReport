@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo.view;
+package com.jnu.android_test_demo.view;
 
 import static java.lang.Math.min;
 
@@ -7,13 +7,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.jnu.recyclerview_demo.R;
+import com.jnu.android_test_demo.R;
+
 
 public class CustomClockView extends View {
 

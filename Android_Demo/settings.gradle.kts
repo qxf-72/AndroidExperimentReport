@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RecyclerView_Demo"
+rootProject.name = "Android_Test_Demo"
 include(":app")

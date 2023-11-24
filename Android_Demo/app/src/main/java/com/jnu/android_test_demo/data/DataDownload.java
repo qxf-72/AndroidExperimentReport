@@ -1,4 +1,4 @@
-package com.jnu.recyclerview_demo.data;
+package com.jnu.android_test_demo.data;
 
 import org.json.JSONArray;
 import org.json.JSONException;

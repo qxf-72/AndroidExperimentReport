@@ -3,11 +3,11 @@ plugins {
 }
 
 android {""
-    namespace = "com.jnu.recyclerview_demo"
+    namespace = "com.jnu.android_test_demo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.jnu.recyclerview_demo"
+        applicationId = "com.jnu.android_test_demo"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
