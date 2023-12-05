@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  * Instrumented test, which will execute on an Android device.
+ * 在Android设备上执行的测试
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */

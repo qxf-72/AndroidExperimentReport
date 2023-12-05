@@ -17,8 +17,6 @@ import androidx.annotation.NonNull;
 import com.jnu.android_test_demo.R;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
@@ -64,7 +62,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     }
 
 
-    // 游戏循环线程
+    // 游戏循环线程类
     private class GameLoopThread extends Thread {
         private boolean isLive = true;
 
@@ -80,7 +78,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 spirits.add(new GameSpirit(Math.random(), Math.random(), R.drawable.book_no_name));
             }
 
-            int counter=0;
+            int counter = 0;
             while (isLive) {
                 Canvas canvas = null;
                 try {
@@ -102,8 +100,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                     touchX = touchY = NOT_A_VALID_TOUCH;
 
                     // 倒计时结束
-                    if(GameView.this.countDown==0)
-                        isLive=false;
+                    if (GameView.this.countDown == 0)
+                        isLive = false;
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
@@ -114,9 +112,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 try {
                     Thread.sleep(20);
                     // 计时器
-                    counter+=20;
-                    if(counter==1000){
-                        counter=0;
+                    counter += 20;
+                    if (counter == 1000) {
+                        counter = 0;
                         GameView.this.countDown--;
                     }
                 } catch (InterruptedException e) {

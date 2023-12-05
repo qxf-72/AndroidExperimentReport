@@ -15,7 +15,7 @@ public class DataDownload {
 
     public String download(String urls) {
         StringBuilder stringBuilder = new StringBuilder();
-        URL url = null;
+        URL url;
         try {
             url = new URL(urls);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
